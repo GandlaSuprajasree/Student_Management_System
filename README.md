@@ -1,0 +1,97 @@
+Student Management System
+A simple command-line application for managing student records built with Python. This system allows you to add, view, search, update, and delete student information.
+
+Features
+Add Student: Register new students with ID, name, course, and marks
+View Students: Display all student records in a formatted table
+Search Student: Find students by ID or name
+Update Student: Modify student course or marks
+Delete Student: Remove student records from the system
+Validation: Built-in validation for student data integrity
+Project Structure
+student_management/
+│
+├── main.py                 # Entry point of the application
+├── student_management/
+│   ├── __init__.py        # Package initializer
+│   ├── data.py            # Data storage and constants
+│   ├── menu.py            # Main menu interface
+│   ├── functions.py       # Core CRUD operations
+│   └── display.py         # Display and search functions
+Requirements
+Python 3.6 or higher
+No external dependencies required
+Installation
+Clone or download this repository
+Navigate to the project directory
+Ensure the project structure matches the layout above
+Usage
+Run the application using:
+
+bash
+python main.py
+Menu Options
+Upon running the program, you'll see the following menu:
+
+===== Student Management System =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Adding a Student
+Select option 1
+Enter student ID (integer)
+Enter student name
+Enter course (CSE, ECE, IT, MECH, or CIVIL)
+Enter marks (0-100)
+
+Viewing Students
+Select option 2 to display all registered students in a tabular format.
+
+Searching for a Student
+Select option 3 and enter either:
+Student ID (exact match)
+Student name (partial match, case-insensitive)
+
+Updating a Student
+Select option 4
+Enter the student ID
+Choose what to update:
+Course
+Marks
+
+Deleting a Student
+Select option 5
+Enter the student ID to delete
+Constraints
+Maximum Students: 8 students can be stored at a time
+Valid Courses: CSE, ECE, IT, MECH, CIVIL
+Marks Range: 0-100
+Unique IDs: Each student must have a unique ID
+
+Data Validation
+The system includes validation for:
+Duplicate student IDs
+Invalid course names
+Marks outside the 0-100 range
+Invalid input types (non-integer IDs or marks)
+Maximum student limit
+
+Example Session
+===== Student Management System =====
+1. Add Student
+Enter your choice: 1
+Enter student ID: 101
+Enter student name: John Doe
+Enter student course (CSE, ECE, IT, MECH, CIVIL): CSE
+Enter student marks: 85
+Student added successfully.
+
+Enter your choice: 2
+===== Student Records =====
+ID    Name                 Course     Marks
+---------------------------------------------
+101   John Doe             CSE        85
+
